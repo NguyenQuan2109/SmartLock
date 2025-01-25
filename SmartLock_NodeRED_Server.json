@@ -1,0 +1,1665 @@
+[
+    {
+        "id": "e1f44dd5a6d72f70",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1410d66d21a599af",
+        "type": "group",
+        "z": "e1f44dd5a6d72f70",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "78bb9056373701f2",
+            "248187098bdd72ac",
+            "763cbe42b786ffbb",
+            "6362b91577fd67b4",
+            "2c333c629fb3c342"
+        ],
+        "x": 34,
+        "y": 639,
+        "w": 772,
+        "h": 122
+    },
+    {
+        "id": "a77c8a6fc30b6786",
+        "type": "group",
+        "z": "e1f44dd5a6d72f70",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "900d251319a162a8",
+            "7f5c822f8cc07d58",
+            "7485e98a0313c1e9",
+            "e301432245f6d573",
+            "f807adb4216837ef",
+            "34c731b99bb13c77",
+            "79857ddf716773ce"
+        ],
+        "x": 34,
+        "y": 919,
+        "w": 632,
+        "h": 142
+    },
+    {
+        "id": "8d71c332ac49a780",
+        "type": "group",
+        "z": "e1f44dd5a6d72f70",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "062e53ed1bbc8c56",
+            "e53db52a78446757",
+            "3d6c178403b81486",
+            "a8b9805f24c29d66",
+            "139a6d10a230e973"
+        ],
+        "x": 34,
+        "y": 799,
+        "w": 832,
+        "h": 82
+    },
+    {
+        "id": "ec9d0a0ae87db2d5",
+        "type": "group",
+        "z": "e1f44dd5a6d72f70",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "09cd3ab4978e2ee6",
+            "da14521c4c7fce4e",
+            "8832629211a308b8",
+            "540cbc91bf5478db",
+            "a163c0ee73c4417c",
+            "8680a724c1a30121",
+            "5dfa14a601ebdd81",
+            "c94a788db85f0ed6",
+            "9b48288f9a81b9f8",
+            "c124a2b398544c1a",
+            "517672b46f1a8748",
+            "88cc2e1217bd3bc3",
+            "84386815696108e5",
+            "1a67515f14f3bac0",
+            "80c16f9b0361239a",
+            "2ac586d61898a2c3",
+            "00d66280f5c37d51",
+            "881597b31b838cdd",
+            "67e3e22475612e23",
+            "5da15d887b7a1866",
+            "89fc3ade535fd64d",
+            "6249d7244b367f90",
+            "1d722519a678a5e7",
+            "f45722f741036a68",
+            "f3626b1b5549ab57",
+            "1f13d4fbc813c33c",
+            "e982a6ca2e43f724",
+            "6657e8f5854b2d46",
+            "3d838da93fdfb78a",
+            "535bf44ebaf89d18"
+        ],
+        "x": 34,
+        "y": 159,
+        "w": 932,
+        "h": 422
+    },
+    {
+        "id": "1587a979ca3c6866",
+        "type": "mqtt out",
+        "z": "e1f44dd5a6d72f70",
+        "name": "",
+        "topic": "test",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "88d26006a14dbd67",
+        "x": 330,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "84581dd91d462617",
+        "type": "inject",
+        "z": "e1f44dd5a6d72f70",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Checking",
+        "payload": "yrtfbcn",
+        "payloadType": "str",
+        "x": 180,
+        "y": 20,
+        "wires": [
+            [
+                "1587a979ca3c6866"
+            ]
+        ]
+    },
+    {
+        "id": "4a3bc14708de0d25",
+        "type": "mqtt in",
+        "z": "e1f44dd5a6d72f70",
+        "name": "",
+        "topic": "test",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "88d26006a14dbd67",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 530,
+        "y": 20,
+        "wires": [
+            [
+                "659899fae031d01e"
+            ]
+        ]
+    },
+    {
+        "id": "659899fae031d01e",
+        "type": "debug",
+        "z": "e1f44dd5a6d72f70",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "09cd3ab4978e2ee6",
+        "type": "ui-form",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "UpdateTable",
+        "group": "8f7956aa2cd63ef4",
+        "label": "Bảng cập nhật",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Họ và tên",
+                "key": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Gmail",
+                "key": "email",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "ID(4 số cuối SĐT)",
+                "key": "id",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mode(\"add\" or \"remove\")",
+                "key": "mode",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "email": "",
+            "id": "",
+            "mode": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "clear",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "passthru": false,
+        "dropdownOptions": [],
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "6249d7244b367f90"
+            ]
+        ]
+    },
+    {
+        "id": "da14521c4c7fce4e",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Update_Info_Key",
+        "func": "let myJsonObject = {};\nlet name = msg.payload.name;\nlet email = msg.payload.email;\nlet id = msg.payload.id;\nlet valueToAdd = \"\";\nconst chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';\nfor(let i = 0; i < 32; i++) {\n        valueToAdd += chars.charAt(Math.floor(Math.random() * chars.length));\n}\nmyJsonObject[name] = {};\nmyJsonObject[name][\"email\"] = email;\nmyJsonObject[name][\"id\"] = id;\nmyJsonObject[name][\"secret\"] = valueToAdd;\nmyJsonObject[name][\"RFID\"] = \"xxx\";\nmsg.payload = myJsonObject;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 300,
+        "wires": [
+            [
+                "540cbc91bf5478db",
+                "88cc2e1217bd3bc3"
+            ]
+        ]
+    },
+    {
+        "id": "8832629211a308b8",
+        "type": "mqtt out",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "REQUpdateID",
+        "topic": "REQUpdateID",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "88d26006a14dbd67",
+        "x": 340,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "540cbc91bf5478db",
+        "type": "firebase modify",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "UpdateDatabase",
+        "firebaseconfig": "",
+        "childpath": "UserID",
+        "method": "update",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 570,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a163c0ee73c4417c",
+        "type": "mqtt in",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "",
+        "topic": "RESUpdateID",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "88d26006a14dbd67",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "5dfa14a601ebdd81",
+                "84386815696108e5"
+            ]
+        ]
+    },
+    {
+        "id": "8680a724c1a30121",
+        "type": "firebase modify",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "UpdateDatabase",
+        "firebaseconfig": "",
+        "childpath": "msg.childpath",
+        "method": "set",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 470,
+        "y": 420,
+        "wires": [
+            [
+                "3d838da93fdfb78a"
+            ]
+        ]
+    },
+    {
+        "id": "5dfa14a601ebdd81",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Setup",
+        "func": "let name = msg.payload.name;\nlet rfid = msg.payload.RFID;\n\nmsg.childpath= \"UserID/\"+ name +\"/RFID\";\nmsg.payload = rfid;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 420,
+        "wires": [
+            [
+                "8680a724c1a30121"
+            ]
+        ]
+    },
+    {
+        "id": "c94a788db85f0ed6",
+        "type": "firebase.once",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "ShowData",
+        "firebaseconfig": "",
+        "childpath": "msg.childpath",
+        "repeatifnull": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 350,
+        "y": 480,
+        "wires": [
+            [
+                "9b48288f9a81b9f8"
+            ]
+        ]
+    },
+    {
+        "id": "9b48288f9a81b9f8",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Edit Mail",
+        "func": "let username = msg.childpath.slice(7,-1);\nlet payload = msg.payload;\nlet Mail = \"Đã đăng ký khóa thành công\\n\";\nMail += \"\\t Tên: \";\nMail += username;\nMail += \"\\n\\t Gmail: \";\nMail += payload.email;\nMail += \"\\n\\t Secret: \";\nMail += payload.secret;\nMail += \"\\n\\t RFID: \";\nMail += payload.RFID;\nMail += \"\\n\\t ID: \";\nMail += payload.id;\nMail += \"\\n Hãy giữ thông tin cẩn thận \";\nmsg.payload = Mail;\nmsg.to = payload.email,\nmsg.topic = \"UpdateIDSmartLock\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 480,
+        "wires": [
+            [
+                "c124a2b398544c1a",
+                "80c16f9b0361239a"
+            ]
+        ]
+    },
+    {
+        "id": "c124a2b398544c1a",
+        "type": "e-mail",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "Notification Update",
+        "x": 690,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "517672b46f1a8748",
+        "type": "ui-notification",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "ui": "92286ea8b0fe0caa",
+        "position": "top center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "10",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": true,
+        "className": "",
+        "name": "Notification",
+        "x": 730,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88cc2e1217bd3bc3",
+        "type": "change",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "REQ đang xử lý, hãy tạo RFID",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "517672b46f1a8748"
+            ]
+        ]
+    },
+    {
+        "id": "78bb9056373701f2",
+        "type": "inject",
+        "z": "e1f44dd5a6d72f70",
+        "g": "1410d66d21a599af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 680,
+        "wires": [
+            [
+                "248187098bdd72ac"
+            ]
+        ]
+    },
+    {
+        "id": "248187098bdd72ac",
+        "type": "firebase.once",
+        "z": "e1f44dd5a6d72f70",
+        "g": "1410d66d21a599af",
+        "name": "InitLock",
+        "firebaseconfig": "",
+        "childpath": "UserID",
+        "repeatifnull": false,
+        "eventType": "value",
+        "queries": [],
+        "x": 320,
+        "y": 680,
+        "wires": [
+            [
+                "6362b91577fd67b4"
+            ]
+        ]
+    },
+    {
+        "id": "84386815696108e5",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Config",
+        "func": "msg.childpath = \"UserID/\" + msg.payload[\"name\"] + \"/\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 480,
+        "wires": [
+            [
+                "c94a788db85f0ed6"
+            ]
+        ]
+    },
+    {
+        "id": "1a67515f14f3bac0",
+        "type": "mqtt out",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "REQInitDataLock",
+        "topic": "REQInitDataLock",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "88d26006a14dbd67",
+        "x": 810,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "80c16f9b0361239a",
+        "type": "change",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "OO",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 420,
+        "wires": [
+            [
+                "1a67515f14f3bac0"
+            ]
+        ]
+    },
+    {
+        "id": "763cbe42b786ffbb",
+        "type": "mqtt in",
+        "z": "e1f44dd5a6d72f70",
+        "g": "1410d66d21a599af",
+        "name": "",
+        "topic": "REQInitDataLock",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "88d26006a14dbd67",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 720,
+        "wires": [
+            [
+                "248187098bdd72ac"
+            ]
+        ]
+    },
+    {
+        "id": "6362b91577fd67b4",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "1410d66d21a599af",
+        "name": "LockESP32",
+        "func": "const originalJSON = msg.payload;\nconst newJSON = [];\nfor (const key in originalJSON) {\n    if (originalJSON.hasOwnProperty(key)) {\n        const person = originalJSON[key];\n        newJSON.push({ id: person.id, RFID: person.RFID });\n    }\n}\nmsg.payload = newJSON;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 680,
+        "wires": [
+            [
+                "2c333c629fb3c342"
+            ]
+        ]
+    },
+    {
+        "id": "2c333c629fb3c342",
+        "type": "mqtt out",
+        "z": "e1f44dd5a6d72f70",
+        "g": "1410d66d21a599af",
+        "name": "",
+        "topic": "RESInitDataLock",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "88d26006a14dbd67",
+        "x": 690,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e53db52a78446757",
+        "type": "mqtt in",
+        "z": "e1f44dd5a6d72f70",
+        "g": "8d71c332ac49a780",
+        "name": "",
+        "topic": "CheckOTP",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "88d26006a14dbd67",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 840,
+        "wires": [
+            [
+                "3d6c178403b81486"
+            ]
+        ]
+    },
+    {
+        "id": "3d6c178403b81486",
+        "type": "change",
+        "z": "e1f44dd5a6d72f70",
+        "g": "8d71c332ac49a780",
+        "name": "SetID",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 840,
+        "wires": [
+            [
+                "062e53ed1bbc8c56"
+            ]
+        ]
+    },
+    {
+        "id": "062e53ed1bbc8c56",
+        "type": "firebase.once",
+        "z": "e1f44dd5a6d72f70",
+        "g": "8d71c332ac49a780",
+        "name": "InitLock",
+        "firebaseconfig": "",
+        "childpath": "UserID",
+        "repeatifnull": false,
+        "eventType": "value",
+        "queries": [],
+        "x": 420,
+        "y": 840,
+        "wires": [
+            [
+                "a8b9805f24c29d66"
+            ]
+        ]
+    },
+    {
+        "id": "a8b9805f24c29d66",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "8d71c332ac49a780",
+        "name": "CheckOTP",
+        "func": "const originalJSON = msg.payload;\nconst id = msg.topic[\"id\"];\nconst otp = msg.topic[\"otp\"];\nlet check = \"\";\nfor (let key in originalJSON) {\n    if(originalJSON[key].id == id) {\n        const otplib = global.get('require')('otplib');\n        const authenticator = otplib.authenticator;\n        const secret = originalJSON[key].secret;\n        const token = authenticator.generate(secret);\n        if(otp === token) {\n            msg.payload = \"OK\";\n        } else {\n            msg.payload = \"NO\";\n        }\n        return msg;\n    }          \n}\nmsg.payload = \"NO\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 840,
+        "wires": [
+            [
+                "139a6d10a230e973"
+            ]
+        ]
+    },
+    {
+        "id": "139a6d10a230e973",
+        "type": "mqtt out",
+        "z": "e1f44dd5a6d72f70",
+        "g": "8d71c332ac49a780",
+        "name": "",
+        "topic": "OTPCheck",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "88d26006a14dbd67",
+        "x": 770,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "900d251319a162a8",
+        "type": "mqtt in",
+        "z": "e1f44dd5a6d72f70",
+        "g": "a77c8a6fc30b6786",
+        "name": "",
+        "topic": "Tracking",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "88d26006a14dbd67",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 960,
+        "wires": [
+            [
+                "7f5c822f8cc07d58"
+            ]
+        ]
+    },
+    {
+        "id": "7f5c822f8cc07d58",
+        "type": "change",
+        "z": "e1f44dd5a6d72f70",
+        "g": "a77c8a6fc30b6786",
+        "name": "SetID",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 960,
+        "wires": [
+            [
+                "7485e98a0313c1e9"
+            ]
+        ]
+    },
+    {
+        "id": "7485e98a0313c1e9",
+        "type": "firebase.once",
+        "z": "e1f44dd5a6d72f70",
+        "g": "a77c8a6fc30b6786",
+        "name": "InitLock",
+        "firebaseconfig": "",
+        "childpath": "UserID",
+        "repeatifnull": false,
+        "eventType": "value",
+        "queries": [],
+        "x": 420,
+        "y": 960,
+        "wires": [
+            [
+                "e301432245f6d573"
+            ]
+        ]
+    },
+    {
+        "id": "e301432245f6d573",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "a77c8a6fc30b6786",
+        "name": "Tracking",
+        "func": "const originalJSON = msg.payload;\nconst id = msg.topic[\"id\"];\nlet newJSON = {};\nfor (let key in originalJSON) {\n    if(originalJSON[key][\"id\"] == id) {\n        newJSON[\"times\"] = \"\";\n        newJSON[\"id\"] = originalJSON[key][\"id\"];\n        newJSON[\"name\"] = key;\n        newJSON[\"email\"] = originalJSON[key][\"email\"];\n        msg.payload = newJSON;\n        return msg;\n    }          \n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 960,
+        "wires": [
+            [
+                "34c731b99bb13c77"
+            ]
+        ]
+    },
+    {
+        "id": "f807adb4216837ef",
+        "type": "firebase modify",
+        "z": "e1f44dd5a6d72f70",
+        "g": "a77c8a6fc30b6786",
+        "name": "TrackingTable",
+        "firebaseconfig": "",
+        "childpath": "Tracking",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 320,
+        "y": 1020,
+        "wires": [
+            [
+                "79857ddf716773ce"
+            ]
+        ]
+    },
+    {
+        "id": "34c731b99bb13c77",
+        "type": "change",
+        "z": "e1f44dd5a6d72f70",
+        "g": "a77c8a6fc30b6786",
+        "name": "Timer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload[\"times\"]",
+                "pt": "msg",
+                "to": "iso",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 150,
+        "y": 1020,
+        "wires": [
+            [
+                "f807adb4216837ef"
+            ]
+        ]
+    },
+    {
+        "id": "42b409e911a72afc",
+        "type": "comment",
+        "z": "e1f44dd5a6d72f70",
+        "name": "Update Data Lock",
+        "info": "",
+        "x": 170,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c7e47fa2ba888f1d",
+        "type": "comment",
+        "z": "e1f44dd5a6d72f70",
+        "name": "Backup Data Lock",
+        "info": "",
+        "x": 150,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "3394a1396e61d215",
+        "type": "comment",
+        "z": "e1f44dd5a6d72f70",
+        "name": "Tracking Lock",
+        "info": "",
+        "x": 130,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "d7ec01a3bb0cf984",
+        "type": "comment",
+        "z": "e1f44dd5a6d72f70",
+        "name": "Check OTP",
+        "info": "",
+        "x": 130,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "39b28bdef81d910b",
+        "type": "ui-button",
+        "z": "e1f44dd5a6d72f70",
+        "group": "8f7956aa2cd63ef4",
+        "name": "Direct UnLock",
+        "label": "Nhấn vào đây để mở khóa trực tiếp",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "0a39a5db1aa4a940"
+            ]
+        ]
+    },
+    {
+        "id": "79857ddf716773ce",
+        "type": "ui-table",
+        "z": "e1f44dd5a6d72f70",
+        "g": "a77c8a6fc30b6786",
+        "group": "8f7956aa2cd63ef4",
+        "name": "",
+        "label": "Update History",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "5",
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "selectionType": "click",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "x": 540,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a39a5db1aa4a940",
+        "type": "mqtt out",
+        "z": "e1f44dd5a6d72f70",
+        "name": "",
+        "topic": "DirectUnlock",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "88d26006a14dbd67",
+        "x": 670,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2ac586d61898a2c3",
+        "type": "mqtt in",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "",
+        "topic": "RESUpdateFail",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "88d26006a14dbd67",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 540,
+        "wires": [
+            [
+                "00d66280f5c37d51"
+            ]
+        ]
+    },
+    {
+        "id": "881597b31b838cdd",
+        "type": "firebase modify",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "UpdateDatabase",
+        "firebaseconfig": "",
+        "childpath": "msg.childpath",
+        "method": "remove",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 490,
+        "y": 540,
+        "wires": [
+            [
+                "67e3e22475612e23"
+            ]
+        ]
+    },
+    {
+        "id": "00d66280f5c37d51",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Setup",
+        "func": "let name = msg.payload;\nmsg.childpath= \"UserID/\"+ name;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 540,
+        "wires": [
+            [
+                "881597b31b838cdd"
+            ]
+        ]
+    },
+    {
+        "id": "5da15d887b7a1866",
+        "type": "ui-notification",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "ui": "92286ea8b0fe0caa",
+        "position": "top center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "10",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Notification",
+        "x": 830,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67e3e22475612e23",
+        "type": "change",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "REQ đã hủy do ko add RFID",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 540,
+        "wires": [
+            [
+                "5da15d887b7a1866"
+            ]
+        ]
+    },
+    {
+        "id": "89fc3ade535fd64d",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "SendName",
+        "func": "const name = msg.payload.name;\nlet newJSON = {};\nnewJSON[\"name\"] = name;\nmsg.payload = newJSON;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "8832629211a308b8"
+            ]
+        ]
+    },
+    {
+        "id": "17ee0fb2ef7ad08d",
+        "type": "ngrok",
+        "z": "e1f44dd5a6d72f70",
+        "buttonState": false,
+        "port": "",
+        "portType": "node-red",
+        "host": "",
+        "hostType": "localhost",
+        "creds": "4bbd2909d37e88f6",
+        "proto": "http",
+        "bind_tls": "https",
+        "bind_tlsType": "https",
+        "subdomain": "",
+        "subdomainType": "none",
+        "auth": "",
+        "authType": "none",
+        "hostHeader": "",
+        "hostHeaderType": "none",
+        "name": "",
+        "inputtype": "button",
+        "inputs": 0,
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "0fea043e4aa108c7"
+            ]
+        ]
+    },
+    {
+        "id": "0fea043e4aa108c7",
+        "type": "debug",
+        "z": "e1f44dd5a6d72f70",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 260,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6249d7244b367f90",
+        "type": "switch",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "",
+        "property": "payload.mode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "remove",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "add",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "1d722519a678a5e7"
+            ],
+            [
+                "da14521c4c7fce4e",
+                "89fc3ade535fd64d"
+            ]
+        ]
+    },
+    {
+        "id": "1d722519a678a5e7",
+        "type": "function",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Setup",
+        "func": "let name = msg.payload.name;\nmsg.childpath= \"UserID/\"+ name;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "f45722f741036a68"
+            ]
+        ]
+    },
+    {
+        "id": "f45722f741036a68",
+        "type": "firebase modify",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "UpdateDatabase",
+        "firebaseconfig": "",
+        "childpath": "msg.childpath",
+        "method": "remove",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "f3626b1b5549ab57",
+                "e982a6ca2e43f724"
+            ]
+        ]
+    },
+    {
+        "id": "f3626b1b5549ab57",
+        "type": "change",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "OO",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 200,
+        "wires": [
+            [
+                "1f13d4fbc813c33c"
+            ]
+        ]
+    },
+    {
+        "id": "1f13d4fbc813c33c",
+        "type": "mqtt out",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "REQInitDataLock",
+        "topic": "REQInitDataLock",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "88d26006a14dbd67",
+        "x": 790,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e982a6ca2e43f724",
+        "type": "change",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Đã xóa thành công",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 240,
+        "wires": [
+            [
+                "6657e8f5854b2d46"
+            ]
+        ]
+    },
+    {
+        "id": "6657e8f5854b2d46",
+        "type": "ui-notification",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "ui": "92286ea8b0fe0caa",
+        "position": "top center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "10",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Notification",
+        "x": 850,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d838da93fdfb78a",
+        "type": "change",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Đã thêm thành công, bắt đầu backup",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 360,
+        "wires": [
+            [
+                "535bf44ebaf89d18"
+            ]
+        ]
+    },
+    {
+        "id": "535bf44ebaf89d18",
+        "type": "ui-notification",
+        "z": "e1f44dd5a6d72f70",
+        "g": "ec9d0a0ae87db2d5",
+        "ui": "92286ea8b0fe0caa",
+        "position": "top center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "10",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Notification",
+        "x": 870,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62e96e427af47d88",
+        "type": "mqtt in",
+        "z": "e1f44dd5a6d72f70",
+        "name": "",
+        "topic": "StatusSmartLock",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "88d26006a14dbd67",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 1160,
+        "wires": [
+            [
+                "ec678cd61111014c"
+            ]
+        ]
+    },
+    {
+        "id": "ec678cd61111014c",
+        "type": "trigger",
+        "z": "e1f44dd5a6d72f70",
+        "name": "Check_Connect",
+        "op1": "SmartLock Connect Successfully",
+        "op2": "SmartLock Disconnect",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "20",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 380,
+        "y": 1160,
+        "wires": [
+            [
+                "c2ac9d97ffa389a9"
+            ]
+        ]
+    },
+    {
+        "id": "c2ac9d97ffa389a9",
+        "type": "ui-text",
+        "z": "e1f44dd5a6d72f70",
+        "group": "8f7956aa2cd63ef4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Status_Connect",
+        "label": "Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 580,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "88d26006a14dbd67",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.53.199",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8f7956aa2cd63ef4",
+        "type": "ui-group",
+        "name": "Cập nhật",
+        "page": "85d5e8d6629b2669",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "92286ea8b0fe0caa",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "showPageTitle": true,
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": false,
+        "notificationDisplayTime": "5",
+        "showDisconnectNotification": false
+    },
+    {
+        "id": "4bbd2909d37e88f6",
+        "type": "ngrokauth",
+        "name": ""
+    },
+    {
+        "id": "85d5e8d6629b2669",
+        "type": "ui-page",
+        "name": "Cập nhật",
+        "ui": "92286ea8b0fe0caa",
+        "path": "",
+        "icon": "account-edit",
+        "layout": "grid",
+        "theme": "1d6871b69e20440c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "1d6871b69e20440c",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    }
+]
